@@ -200,9 +200,9 @@ public final class Caching {
             Iterator<CachingProvider> it = serviceLoader.iterator();
             serviceFactory = it.hasNext() ? it.next() : null;
             
-            ServiceLoader<AnnotationProvider> annoationLoader = ServiceLoader.load(AnnotationProvider.class);
-            Iterator<AnnotationProvider> annoationLoaderItr = annoationLoader.iterator();
-            annotationProvider = annoationLoaderItr.hasNext() ? annoationLoaderItr.next() : null;
+            ServiceLoader<AnnotationProvider> annotationLoader = ServiceLoader.load(AnnotationProvider.class);
+            Iterator<AnnotationProvider> annotationLoaderItr = annotationLoader.iterator();
+            annotationProvider = annotationLoaderItr.hasNext() ? annotationLoaderItr.next() : null;
         }
 
         public CachingProvider getServiceFactory() {
